@@ -40,7 +40,18 @@
 		F6FED923248D0461002B9FC7 /* WordDetailedInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED922248D0461002B9FC7 /* WordDetailedInfoEntity.swift */; };
 		F6FED926248D08B2002B9FC7 /* WordDetailedInfoCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED925248D08B2002B9FC7 /* WordDetailedInfoCellProtocol.swift */; };
 		F6FED929248D113F002B9FC7 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED928248D113F002B9FC7 /* UIImageView + Extension.swift */; };
+		F6FED931248D1CA1002B9FC7 /* SkyEngTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FED930248D1CA1002B9FC7 /* SkyEngTranslatorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6FED933248D1CA1002B9FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DA717F248AA22B0029C260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6DA7186248AA22B0029C260;
+			remoteInfo = SkyEngTranslator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F6DA7187248AA22B0029C260 /* SkyEngTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,10 +91,20 @@
 		F6FED922248D0461002B9FC7 /* WordDetailedInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailedInfoEntity.swift; sourceTree = "<group>"; };
 		F6FED925248D08B2002B9FC7 /* WordDetailedInfoCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailedInfoCellProtocol.swift; sourceTree = "<group>"; };
 		F6FED928248D113F002B9FC7 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		F6FED92E248D1CA1002B9FC7 /* SkyEngTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6FED930248D1CA1002B9FC7 /* SkyEngTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngTranslatorTests.swift; sourceTree = "<group>"; };
+		F6FED932248D1CA1002B9FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F6DA7184248AA22B0029C260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FED92B248D1CA1002B9FC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F6DA7189248AA22B0029C260 /* SkyEngTranslator */,
+				F6FED92F248D1CA1002B9FC7 /* SkyEngTranslatorTests */,
 				F6DA7188248AA22B0029C260 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				F6DA7187248AA22B0029C260 /* SkyEngTranslator.app */,
+				F6FED92E248D1CA1002B9FC7 /* SkyEngTranslatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +365,15 @@
 			path = "Global Extensions";
 			sourceTree = "<group>";
 		};
+		F6FED92F248D1CA1002B9FC7 /* SkyEngTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6FED930248D1CA1002B9FC7 /* SkyEngTranslatorTests.swift */,
+				F6FED932248D1CA1002B9FC7 /* Info.plist */,
+			);
+			path = SkyEngTranslatorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,6 +396,24 @@
 			productReference = F6DA7187248AA22B0029C260 /* SkyEngTranslator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F6FED92D248D1CA1002B9FC7 /* SkyEngTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6FED937248D1CA1002B9FC7 /* Build configuration list for PBXNativeTarget "SkyEngTranslatorTests" */;
+			buildPhases = (
+				F6FED92A248D1CA1002B9FC7 /* Sources */,
+				F6FED92B248D1CA1002B9FC7 /* Frameworks */,
+				F6FED92C248D1CA1002B9FC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6FED934248D1CA1002B9FC7 /* PBXTargetDependency */,
+			);
+			name = SkyEngTranslatorTests;
+			productName = SkyEngTranslatorTests;
+			productReference = F6FED92E248D1CA1002B9FC7 /* SkyEngTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -376,6 +426,10 @@
 				TargetAttributes = {
 					F6DA7186248AA22B0029C260 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					F6FED92D248D1CA1002B9FC7 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F6DA7186248AA22B0029C260;
 					};
 				};
 			};
@@ -394,6 +448,7 @@
 			projectRoot = "";
 			targets = (
 				F6DA7186248AA22B0029C260 /* SkyEngTranslator */,
+				F6FED92D248D1CA1002B9FC7 /* SkyEngTranslatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -410,6 +465,13 @@
 				F6FED90C248BBE21002B9FC7 /* WordDetailedInfoView.storyboard in Resources */,
 				F6DA7194248AA22D0029C260 /* Assets.xcassets in Resources */,
 				F6DA71C3248AA76E0029C260 /* SearchTranslateView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FED92C248D1CA1002B9FC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +548,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6FED92A248D1CA1002B9FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FED931248D1CA1002B9FC7 /* SkyEngTranslatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6FED934248D1CA1002B9FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6DA7186248AA22B0029C260 /* SkyEngTranslator */;
+			targetProxy = F6FED933248D1CA1002B9FC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F6DA7195248AA22D0029C260 /* LaunchScreen.storyboard */ = {
@@ -662,6 +740,46 @@
 			};
 			name = Release;
 		};
+		F6FED935248D1CA1002B9FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MWV6L83AV;
+				INFOPLIST_FILE = SkyEngTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noOrg.SkyEngTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyEngTranslator.app/SkyEngTranslator";
+			};
+			name = Debug;
+		};
+		F6FED936248D1CA1002B9FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MWV6L83AV;
+				INFOPLIST_FILE = SkyEngTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = noOrg.SkyEngTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyEngTranslator.app/SkyEngTranslator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,6 +797,15 @@
 			buildConfigurations = (
 				F6DA719C248AA22D0029C260 /* Debug */,
 				F6DA719D248AA22D0029C260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6FED937248D1CA1002B9FC7 /* Build configuration list for PBXNativeTarget "SkyEngTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FED935248D1CA1002B9FC7 /* Debug */,
+				F6FED936248D1CA1002B9FC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
