@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kug-Fz-oGF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Word Detailed Info View-->
+        <scene sceneID="cgw-Nd-xW6">
+            <objects>
+                <viewController storyboardIdentifier="WordDetailedInfoView" id="kug-Fz-oGF" customClass="WordDetailedInfoView" customModule="SkyEngTranslator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tmx-em-cQO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h42-wp-ph4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h42-wp-ph4" firstAttribute="top" secondItem="KcU-kR-O7R" secondAttribute="top" id="1WB-cS-plj"/>
+                            <constraint firstItem="h42-wp-ph4" firstAttribute="leading" secondItem="KcU-kR-O7R" secondAttribute="leading" id="HC2-dj-njx"/>
+                            <constraint firstItem="KcU-kR-O7R" firstAttribute="bottom" secondItem="h42-wp-ph4" secondAttribute="bottom" id="I19-s4-Ow4"/>
+                            <constraint firstItem="KcU-kR-O7R" firstAttribute="trailing" secondItem="h42-wp-ph4" secondAttribute="trailing" id="a4x-36-UzO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KcU-kR-O7R"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="h42-wp-ph4" id="me6-pp-Y6A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gvp-8i-5aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="85"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SkyEngTranslator
+
+  Created by Aleksey Matyushkin on 06.06.2020.
+  Copyright © 2020 Aleksey Matyushkin. All rights reserved.
+*/
+
+"Skyeng Translater" = "Skyeng Translater";
+"Meanings:" = "Meanings:";
+"Transcription:" = "Transcription:";
+"Network error" = "Network error";
+"Ok" = "Ok";
